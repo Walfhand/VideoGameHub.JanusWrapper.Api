@@ -8,6 +8,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["src/Services/JanusWrapper/src/VideoGameHub.JanusWrapper.Api/VideoGameHub.JanusWrapper.Api.csproj", "src/Services/JanusWrapper/src/VideoGameHub.JanusWrapper.Api/"]
+COPY ["src/Services/JanusWrapper/src/VideoGameHub.JanusWrapper/VideoGameHub.JanusWrapper.csproj", "src/Services/JanusWrapper/src/VideoGameHub.JanusWrapper/"]
 COPY ["src/VideoGameHub.BuildingBlock/VideoGameHub.BuildingBlock.csproj", "src/VideoGameHub.BuildingBlock/"]
 RUN dotnet restore "src/Services/JanusWrapper/src/VideoGameHub.JanusWrapper.Api/VideoGameHub.JanusWrapper.Api.csproj"
 COPY . .

@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\..\..\..\VideoGameHub.BuildingBlock\VideoGameHub.BuildingBlock.csproj" />
+      <ProjectReference Include="..\VideoGameHub.JanusWrapper\VideoGameHub.JanusWrapper.csproj" />
     </ItemGroup>
 
 </Project>
